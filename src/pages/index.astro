@@ -8,6 +8,8 @@ import Card from "../components/Card.astro";
     <img class="logo" src="/logo.svg" />
     <h1><span class="text-gradient">RAMDOLA</span></h1>
 
+    <h2>Expertise. Commitment. <span class="accent">Value</span>.</h2>
+
     <div class="instructions">
       <strong>About us</strong>
       <p>
@@ -106,6 +108,19 @@ import Card from "../components/Card.astro";
     font-family: Rockwell;
   }
 
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: Rockwell;
+  }
+
+  .accent {
+    color: rgb(var(--accent));
+  }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -113,6 +128,7 @@ import Card from "../components/Card.astro";
     background-size: 300%;
     background-position: 0%;
   }
+
   .instructions {
     margin-bottom: 2rem;
     border: 1px solid rgba(var(--accent-light), 25%);
@@ -123,29 +139,35 @@ import Card from "../components/Card.astro";
     padding: 1.5rem;
     border-radius: 8px;
   }
+
   .instructions strong {
     color: rgb(var(--accent-light));
   }
+
   .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(36ch, 1fr));
     gap: 2rem;
     padding: 0;
   }
+
   .link-card-grid A,
   .link-card-grid A:visited {
     color: rgb(var(--accent));
     text-decoration: none;
   }
+
   hr {
     width: 70%;
     border: 1px solid #444;
   }
+
   .address {
     text-align: center;
     color: #aaa;
     font-size: smaller;
   }
+
   .copyright {
     text-align: center;
     color: #aaa;
