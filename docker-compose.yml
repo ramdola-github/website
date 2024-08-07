@@ -1,0 +1,8 @@
+services:
+  website:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - 4321:4321
