@@ -22,14 +22,14 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    --accent: 50, 50, 200;
-    --accent-light: 150, 150, 250;
-    --accent-dark: 10, 10, 150;
+    --accent: 51, 102, 204;
+    --accent-light: 102, 140, 217;
+    --accent-dark: 38, 77, 153;
     --accent-gradient: linear-gradient(
       45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 40%,
-      white 50%
+      rgb(var(--accent-light)),
+      rgb(var(--accent-dark)) 50%,
+      grey 100%
     );
   }
   html {
